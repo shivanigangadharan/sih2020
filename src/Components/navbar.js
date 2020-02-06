@@ -29,7 +29,9 @@ class NavBar extends React.Component {
               <div className="form-group">
                 <input type="text" className="form-control n-form-control" placeholder="Search" />
               </div>
-              <button type="submit" className="btn btn-default n-btn"><div className="glyphicon glyphicon-search"> </div></button>
+              <Link to="/search-results">
+                <button type="submit" className="btn btn-default n-btn"><div className="glyphicon glyphicon-search"> </div></button>
+              </Link>
             </form>
             <ul className="nav navbar-nav navbar-right">
 

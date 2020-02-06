@@ -47,9 +47,10 @@ function Cover() {
                         <ProfilePic className="col-lg-6 col-sm-12" src="./DSC09318-2.jpg" />
                         <Text className="col-lg-6 col-sm-12">
                             <i>Lovetesh Chandra</i> <br /><br />
-                            Date of birth: 01/01/01<br /><br />
                             About : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<br /> <br />
+<br /> <br /> Branch: IT-M <br /><br />
+                            Year of passing: 2021<br /><br />
+
                             Contact : lovetesh@gmail.com | 8833625347
                         </Text>
                     </Card>
