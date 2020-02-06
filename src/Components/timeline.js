@@ -1,7 +1,19 @@
 import React from 'react';
 import TimelineCard from './timelinecard';
+import fire from '../firebase/fire'
+
+const db = fire.database();
+
+var rootRef = db.ref();
+var userRef = rootRef.child('users');
+var postRef = rootRef.child('posts');
+var likesRef = rootRef.child('likes')
 
 class Timeline extends React.Component {
+
+  searchdb(){
+    
+  }
   
   render(){
     return(
