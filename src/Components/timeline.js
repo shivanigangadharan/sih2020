@@ -8,8 +8,16 @@ var rootRef = db.ref();
 var userRef = rootRef.child('users');
 var postRef = rootRef.child('posts');
 var likesRef = rootRef.child('likes')
-
+var x = [1,2,3,4,5];
 class Timeline extends React.Component {
+constructor(props){
+  super(props);
+this.state={
+  value: [1,2,3,4],
+};  
+}
+
+
 
   searchdb(){
     
@@ -28,13 +36,9 @@ class Timeline extends React.Component {
           </button>
         </div>
 
-        <TimelineCard/>
-        <TimelineCard/>
-        <TimelineCard/>
-        <TimelineCard/>
-        <TimelineCard/>
-        <TimelineCard/>
-        <TimelineCard/>
+        {this.state.value.map((e)=>{
+          return <TimelineCard/>
+        })}
 
       </div>
     );
