@@ -6,13 +6,21 @@ const db = fire.database();
 
 var rootRef = db.ref();
 var userRef = rootRef.child('users');
-var postRef = rootRef.child('posts');
+var posts = rootRef.child('posts');
 var likesRef = rootRef.child('likes')
 
 class Timeline extends React.Component {
 
-  searchdb(){
-    
+  getposts(){
+    posts.forEach(element => {
+      var name = element.fullname;
+      var postimage = element.postimage;
+      var profileimage = element.profileimage;
+      var date = element.date;
+      var time = element.time;
+      var user = element.uid;
+      var caption = element.description;
+    });
   }
   
   render(){
