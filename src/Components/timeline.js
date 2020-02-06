@@ -4,6 +4,18 @@ import fire from '../firebase/fire'
 
 const db = fire.database();
 
+var num = [1,2,3,4,5];
+
+function showI(){
+
+for (var i = 0; i < num.length; i++) {
+  return(
+    <TimelineCard/>
+    );
+    showI();
+}
+
+}
 var rootRef = db.ref();
 var userRef = rootRef.child('users');
 var posts = rootRef.child('posts');
@@ -14,8 +26,9 @@ constructor(props){
   super(props);
 this.state={
   value: [1,2,3,4],
-};  
+};
 }
+
 
 
 
@@ -30,7 +43,7 @@ this.state={
       var caption = element.description;
     });
   }
-  
+
   render(){
     return(
       <div className="content-timeline">
@@ -44,9 +57,7 @@ this.state={
           </button>
         </div>
 
-        {this.state.value.map((e)=>{
-          return <TimelineCard/>
-        })}
+       <TimelineCard/>
 
       </div>
     );
